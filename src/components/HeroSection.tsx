@@ -108,7 +108,7 @@ const CustomCursor = () => {
         setHoverText("");
       } else if (target.closest('.visual-card-container')) {
         setIsHovering(true);
-        setHoverText("DRAG");
+        
       } else {
         setIsHovering(false);
         setHoverText("");
