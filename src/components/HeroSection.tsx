@@ -516,7 +516,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative min-h-screen w-full overflow-hidden bg-[#FAFAFA] selection:bg-[#00C853] selection:text-white">
+    <section className="relative min-h-screen w-full overflow-hidden bg-[#FAFAFA] selection:bg-[#00C853] selection:text-white flex flex-col">
       <CustomCursor />
       <ScrollProgressBar />
       <OrbBackground />
@@ -524,7 +524,7 @@ export default function HeroSection() {
       <FloatingParticles />
       <Navbar />
 
-      <div className="relative z-20 mx-auto flex min-h-screen max-w-7xl flex-col justify-center px-6 pt-40 pb-16 lg:flex-row lg:items-center lg:px-12 lg:pt-40 lg:pb-8">
+      <div className="relative z-20 mx-auto flex flex-1 w-full max-w-7xl flex-col justify-center px-6 pt-32 pb-8 lg:flex-row lg:items-center lg:px-12 lg:pt-32 lg:pb-8">
         
         {/* LEFT COLUMN */}
         <div className="flex w-full flex-col justify-center lg:w-[50%]">
