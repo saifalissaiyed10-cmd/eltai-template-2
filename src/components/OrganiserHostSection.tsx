@@ -45,7 +45,7 @@ const OrganiserHostSection = () => {
             <div className="bg-white rounded-2xl p-6 shadow-[0_4px_24px_rgba(0,0,0,0.04)] w-[340px] h-[160px] flex items-center justify-center border border-gray-100 transition-transform hover:-translate-y-1">
               {/* ELT@I Logo */}
               <div className="flex items-center justify-center w-full h-full bg-white rounded-xl overflow-hidden">
-                <img src="/eltai-logo.png" alt="ELT@I Logo" className="w-full h-full object-contain p-2" />
+                <img src="https://conf2026.eltai.in/assets/ELTAI-DxCx19mA.png" alt="ELT@I Logo" className="w-full h-full object-contain p-2" />
               </div>
             </div>
             <p className="mt-6 text-gray-500 font-medium text-sm bg-[#FAFAFA] px-4 py-1 rounded-full">Organiser</p>
@@ -71,7 +71,7 @@ const OrganiserHostSection = () => {
             <div className="bg-white rounded-2xl p-8 shadow-[0_4px_24px_rgba(0,0,0,0.04)] w-[340px] h-[160px] flex items-center justify-center border border-gray-100 transition-transform hover:-translate-y-1">
               {/* MIT-ADT Logo */}
               <div className="flex items-center justify-center w-full h-full bg-white rounded-xl overflow-hidden">
-                <img src="/mit-adt-logo.png" alt="MIT-ADT University Logo" className="w-full h-full object-contain p-2" />
+                <img src="https://conf2026.eltai.in/assets/MITADT-KRFaF891.png" alt="MIT-ADT University Logo" className="w-full h-full object-contain p-2" />
               </div>
             </div>
             <p className="mt-6 text-gray-500 font-medium text-sm bg-[#FAFAFA] px-4 py-1 rounded-full">Host</p>

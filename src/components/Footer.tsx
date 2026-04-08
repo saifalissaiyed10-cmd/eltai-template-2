@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="flex flex-col">
             {/* ELT@I Logo Pill */}
             <div className="bg-white rounded-lg px-3 py-2 inline-flex items-center justify-center w-fit mb-6">
-              <img src="/eltai-logo.png" alt="ELT@I Logo" className="h-12 object-contain" />
+              <img src="https://conf2026.eltai.in/assets/ELTAI-DxCx19mA.png" alt="ELT@I Logo" className="h-12 object-contain" />
             </div>
 
             <h4 className="font-bold text-gray-900 mb-3 text-[15px]">English Language Teachers' Association of India</h4>
@@ -26,7 +26,7 @@ const Footer = () => {
           <div className="flex flex-col">
             {/* MIT-ADT Logo Pill */}
             <div className="bg-white rounded-lg px-4 py-2 inline-flex items-center justify-center w-fit mb-6">
-              <img src="/mit-adt-logo.png" alt="MIT-ADT University Logo" className="h-12 object-contain" />
+              <img src="https://conf2026.eltai.in/assets/MITADT-KRFaF891.png" alt="MIT-ADT University Logo" className="h-12 object-contain" />
             </div>
 
             <h4 className="font-bold text-gray-900 mb-3 text-[15px]">School of Humanities & School of Holistic Development</h4>
