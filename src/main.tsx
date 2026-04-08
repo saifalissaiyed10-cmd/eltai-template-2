@@ -13,8 +13,17 @@ console.error = (...args) => {
 };
 
 window.addEventListener('error', (e) => {
-  if (e.message.includes('ResizeObserver loop limit exceeded')) {
+  if (e.message && e.message.includes('ResizeObserver')) {
     e.stopImmediatePropagation();
+  }
+  if (!e.message || e.message === 'Uncaught ') {
+    e.stopImmediatePropagation();
+  }
+});
+
+window.addEventListener('unhandledrejection', (e) => {
+  if (!e.reason || e.reason.message === 'Uncaught ') {
+    e.preventDefault();
   }
 });
 

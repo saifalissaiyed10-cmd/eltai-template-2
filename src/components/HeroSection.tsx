@@ -103,7 +103,7 @@ const CustomCursor = () => {
 
     const handleMouseOver = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
-      if (!target || !target.closest) return;
+      if (!target || typeof target.closest !== 'function') return;
       
       if (target.closest('button') || target.closest('a')) {
         setIsHovering(true);
@@ -184,6 +184,12 @@ const GrainCanvas = () => {
     const draw = () => {
       const w = canvas.width;
       const h = canvas.height;
+      
+      if (w === 0 || h === 0) {
+        animationFrameId = requestAnimationFrame(draw);
+        return;
+      }
+      
       const idata = ctx.createImageData(w, h);
       const buffer32 = new Uint32Array(idata.data.buffer);
       const len = buffer32.length;
