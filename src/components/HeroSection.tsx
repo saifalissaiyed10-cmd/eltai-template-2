@@ -534,7 +534,7 @@ export default function HeroSection() {
       <FloatingParticles />
       <Navbar />
 
-      <div className="relative z-20 mx-auto flex flex-1 w-full max-w-7xl flex-col justify-start px-6 pt-24 pb-10 lg:flex-row lg:items-start lg:px-12 lg:pt-24 lg:pb-10">
+      <div className="relative z-20 mx-auto flex flex-1 w-full max-w-7xl flex-col justify-start px-6 pt-32 pb-10 lg:flex-row lg:items-start lg:px-12 lg:pt-36 lg:pb-10">
         
         {/* LEFT COLUMN */}
         <div className="flex w-full flex-col justify-center lg:w-[50%]">
