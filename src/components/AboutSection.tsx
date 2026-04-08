@@ -230,7 +230,7 @@ const AboutSection: React.FC = () => {
       <div className="absolute inset-0 pointer-events-none z-0" style={{ backgroundImage: 'repeating-linear-gradient(0deg, transparent 0px, transparent 3px, rgba(0,0,0,0.02) 3px, rgba(0,0,0,0.02) 4px)' }} />
       
       {/* LAYER 2 — Large ghost text watermark */}
-      <div className="absolute -right-[60px] -bottom-[40px] pointer-events-none select-none z-0 text-[300px] leading-none" style={{ fontFamily: 'Bebas Neue, sans-serif', color: 'rgba(0,0,0,0.03)' }}>
+      <div className="absolute right-0 md:right-4 -bottom-[20px] md:-bottom-[40px] pointer-events-none select-none z-0 text-[120px] sm:text-[180px] md:text-[250px] lg:text-[300px] leading-none" style={{ fontFamily: 'Bebas Neue, sans-serif', color: 'rgba(0,0,0,0.03)' }}>
         ELTAI
       </div>
       
