@@ -53,7 +53,7 @@ const OrganiserHostSection = () => {
 
           {/* Divider (visible on md+) */}
           <motion.div 
-            className="hidden md:block w-px h-24 bg-gray-200 relative z-10"
+            className="hidden md:block w-px h-24 bg-[#00C853] relative z-10"
             animate={isInView ? { opacity: [1, 0, 1] } : { opacity: 1 }}
             transition={{ duration: 2.5, ease: "easeInOut", delay: 0.2 }}
           ></motion.div>

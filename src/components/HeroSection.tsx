@@ -261,13 +261,13 @@ const OrbBackground = () => {
 
 const FloatingParticles = () => {
   const particles: Particle[] = useMemo(() => {
-    return Array.from({ length: 80 }).map((_, i) => ({
+    return Array.from({ length: 150 }).map((_, i) => ({
       id: i,
       x: Math.random() * 100,
       y: Math.random() * 100,
-      size: Math.random() * 4 + 2,
+      size: Math.random() * 6 + 3,
       type: Math.random() > 0.6 ? 'volt' : Math.random() > 0.3 ? 'cyan' : 'blue',
-      duration: Math.random() * 10 + 10,
+      duration: Math.random() * 8 + 6,
       delay: Math.random() * 5,
     }));
   }, []);
@@ -287,8 +287,8 @@ const FloatingParticles = () => {
             boxShadow: `0 0 ${p.size * 2}px ${p.type === 'volt' ? COLORS.volt : p.type === 'cyan' ? COLORS.electric : COLORS.pulse}`,
           }}
           animate={{
-            y: [0, -100, 0],
-            x: [0, Math.random() * 50 - 25, 0],
+            y: [0, -200, 0],
+            x: [0, Math.random() * 100 - 50, 0],
             opacity: [0, 1, 0],
           }}
           transition={{
