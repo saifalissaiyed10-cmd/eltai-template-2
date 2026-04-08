@@ -103,6 +103,8 @@ const CustomCursor = () => {
 
     const handleMouseOver = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
+      if (!target || !target.closest) return;
+      
       if (target.closest('button') || target.closest('a')) {
         setIsHovering(true);
         setHoverText("");

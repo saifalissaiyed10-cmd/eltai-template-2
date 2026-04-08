@@ -43,22 +43,9 @@ const OrganiserHostSection = () => {
             transition={{ duration: 2.5, ease: "easeInOut", delay: 0.2 }}
           >
             <div className="bg-white rounded-2xl p-6 shadow-[0_4px_24px_rgba(0,0,0,0.04)] w-[340px] h-[160px] flex items-center justify-center border border-gray-100 transition-transform hover:-translate-y-1">
-              {/* ELT@I Logo Recreation */}
-              <div className="flex items-center gap-3 border-2 border-[#1B5E20] rounded-xl px-4 py-2 w-full h-full justify-center bg-white">
-                <div className="w-12 h-12 flex-shrink-0">
-                  <svg viewBox="0 0 24 24" className="w-full h-full">
-                    <path d="M12 2C12 2 7 9 7 11C7 13.5 9.5 15 12 15C14.5 15 17 13.5 17 11C17 9 12 2 12 2Z" fill="#1B5E20" />
-                    <path d="M11 15V22H13V15H11Z" fill="#5D4037" />
-                    <path d="M5 10C5 10 2 14 2 15.5C2 17 3.5 18 5 18C6.5 18 8 17 8 15.5C8 14 5 10 5 10Z" fill="#1B5E20" />
-                    <path d="M19 10C19 10 22 14 22 15.5C22 17 20.5 18 19 18C17.5 18 16 17 16 15.5C16 14 19 10 19 10Z" fill="#1B5E20" />
-                  </svg>
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-3xl font-serif text-[#1B5E20] font-bold tracking-wide leading-none mb-1">ELT@I</span>
-                  <span className="text-[9px] text-[#B71C1C] font-bold leading-tight">
-                    English Language Teachers'<br/>Association of India
-                  </span>
-                </div>
+              {/* ELT@I Logo */}
+              <div className="flex items-center justify-center w-full h-full bg-white rounded-xl overflow-hidden">
+                <img src="/eltai-logo.png" alt="ELT@I Logo" className="w-full h-full object-contain p-2" />
               </div>
             </div>
             <p className="mt-6 text-gray-500 font-medium text-sm bg-[#FAFAFA] px-4 py-1 rounded-full">Organiser</p>
@@ -82,27 +69,9 @@ const OrganiserHostSection = () => {
             transition={{ duration: 2.5, ease: "easeInOut", delay: 0.2 }}
           >
             <div className="bg-white rounded-2xl p-8 shadow-[0_4px_24px_rgba(0,0,0,0.04)] w-[340px] h-[160px] flex items-center justify-center border border-gray-100 transition-transform hover:-translate-y-1">
-              {/* MIT-ADT Logo Recreation */}
-              <div className="flex items-center gap-4 bg-white">
-                <div className="w-16 h-16 rounded-full border-[3px] border-[#4A148C] flex items-center justify-center text-[#4A148C] flex-shrink-0 relative">
-                  <div className="absolute inset-1 border border-[#4A148C] rounded-full"></div>
-                  <div className="flex flex-col items-center justify-center">
-                    <span className="text-[8px] font-bold leading-none">MIT</span>
-                    <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 my-0.5">
-                      <path d="M12 2L2 7L12 12L22 7L12 2Z" />
-                      <path d="M2 17L12 22L22 17V9.5L12 14.5L2 9.5V17Z" />
-                    </svg>
-                    <span className="text-[6px] font-bold leading-none">ADT</span>
-                  </div>
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-lg font-serif text-[#4A148C] font-bold leading-none mb-1">
-                    MIT-ADT<br/>UNIVERSITY
-                  </span>
-                  <span className="text-[10px] text-gray-700 font-medium tracking-wide mb-1 text-center">PUNE, INDIA</span>
-                  <div className="w-full h-px bg-[#D4AF37] mb-1"></div>
-                  <span className="text-[7px] text-gray-500 italic text-center">A leap towards World Class Education</span>
-                </div>
+              {/* MIT-ADT Logo */}
+              <div className="flex items-center justify-center w-full h-full bg-white rounded-xl overflow-hidden">
+                <img src="/mit-adt-logo.png" alt="MIT-ADT University Logo" className="w-full h-full object-contain p-2" />
               </div>
             </div>
             <p className="mt-6 text-gray-500 font-medium text-sm bg-[#FAFAFA] px-4 py-1 rounded-full">Host</p>
