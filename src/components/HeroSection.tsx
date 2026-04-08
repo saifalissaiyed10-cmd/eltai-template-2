@@ -329,7 +329,7 @@ const Navbar = () => {
         isScrolled ? 'bg-white/80 py-4 backdrop-blur-md border-b border-black/10' : 'bg-transparent py-6'
       }`}
     >
-<div className="mx-auto flex w-full max-w-7xl items-center justify-between pl-5 pr-8 sm:pr-10 lg:pr-16 xl:pr-20 -ml-2 ml-9">
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between pl-5 pr-8 sm:pr-10 lg:pr-16 xl:pr-20 -ml-2 ml-9">
         {/* Left Logo */}
         <div className="flex items-center gap-2 sm:gap-5 pr-2 sm:pr-6 shrink-0">
           <img src="https://conf2026.eltai.in/assets/ELTAI-DxCx19mA.png" alt="ELT@I Logo" className="h-8 sm:h-10 md:h-12 object-contain" />
