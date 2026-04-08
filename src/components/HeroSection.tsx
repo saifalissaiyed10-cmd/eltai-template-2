@@ -329,15 +329,16 @@ const Navbar = () => {
         isScrolled ? 'bg-white/80 py-4 backdrop-blur-md border-b border-black/10' : 'bg-transparent py-6'
       }`}
     >
-      <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 lg:px-12">
+<div className="mx-auto flex w-full max-w-7xl items-center justify-between pl-5 pr-8 sm:pr-10 lg:pr-16 xl:pr-20 -ml-2 ml-9">
         {/* Left Logo */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 sm:gap-5 pr-2 sm:pr-6 shrink-0">
+          <img src="https://conf2026.eltai.in/assets/ELTAI-DxCx19mA.png" alt="ELT@I Logo" className="h-8 sm:h-10 md:h-12 object-contain" />
         </div>
         
         {/* Middle Nav Items */}
-        <div className="hidden items-center gap-4 xl:gap-7 lg:flex">
+        <div className="hidden items-center gap-3 xl:gap-7 lg:flex shrink-0">
           {NAV_ITEMS.map((item) => (
-            <a key={item.name} href={`#${item.name.toLowerCase()}`} className="group relative flex items-center gap-1 text-[12px] xl:text-[13px] font-bold text-gray-700 transition-colors hover:text-gray-900" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+            <a key={item.name} href={`#${item.name.toLowerCase()}`} className="group relative flex items-center gap-1 text-[11px] xl:text-[13px] font-bold text-gray-700 transition-colors hover:text-gray-900" style={{ fontFamily: 'DM Sans, sans-serif' }}>
               {item.name}
               {item.hasDropdown && <ChevronDown className="h-3.5 w-3.5 opacity-60" />}
               <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#00C853] transition-all duration-300 group-hover:w-full" />
@@ -346,13 +347,14 @@ const Navbar = () => {
         </div>
 
         {/* Right Section */}
-        <div className="flex items-center gap-4 xl:gap-6">
-          <button className="relative overflow-hidden whitespace-nowrap rounded-full bg-gradient-to-r from-[#00C853] to-[#008F11] px-4 py-2 xl:px-6 text-xs xl:text-sm font-semibold text-white transition-all hover:shadow-[0_0_20px_rgba(0,200,83,0.4)] border border-transparent" style={{ fontFamily: 'Syne, sans-serif' }}>
+        <div className="flex items-center gap-3 sm:gap-4 xl:gap-6 shrink-0">
+          <button className="relative overflow-hidden whitespace-nowrap rounded-full bg-gradient-to-r from-[#00C853] to-[#008F11] px-3 py-1.5 sm:px-4 sm:py-2 xl:px-6 text-[10px] sm:text-xs xl:text-sm font-semibold text-white transition-all hover:shadow-[0_0_20px_rgba(0,200,83,0.4)] border border-transparent" style={{ fontFamily: 'Syne, sans-serif' }}>
             <span className="relative z-10">Register Now</span>
             <motion.div
               className="absolute inset-0 z-0 bg-white/20 opacity-0 transition-opacity duration-300 hover:opacity-100"
             />
           </button>
+          <img src="https://conf2026.eltai.in/assets/MITADT-KRFaF891.png" alt="MIT-ADT University Logo" className="h-8 sm:h-10 md:h-12 object-contain" />
         </div>
       </div>
     </motion.nav>
